@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:id="@+id/txtValorInicial"
+        android:layout_margin="10dp"
+        android:hint="Valor inicial"
+        style="@style/Widget.AppCompat.EditText"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:id="@+id/txtValorFinal"
+        android:layout_margin="10dp"
+        android:hint="Valor final"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/txtValorInicial"
+        />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnSortear"
+        android:layout_below="@id/txtValorFinal"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:background="#00FFFFFF"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dado"
+        android:onClick="Sortear"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSortear"
+        android:textColor="@color/Branco"
+        android:text="Sortear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+</RelativeLayout>
